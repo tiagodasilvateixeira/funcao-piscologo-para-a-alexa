@@ -21,7 +21,7 @@ const LaunchRequestHandler = {
         && handlerInput.requestEnvelope.request.intent.name === 'EstadoIntent';
     },
     handle(handlerInput) {
-      var feel = handlerInput.requestEnvelope.request.intent.slots.Sentimento.value;
+      var feel = Alexa.getSlotValue(handlerInput.requestEnvelope, 'sentimento');
       const speechText = 'Por que você acha que está se sentido ' + feel + '?';
   
       return handlerInput.responseBuilder
@@ -80,7 +80,7 @@ const LaunchRequestHandler = {
       console.log(`Error handled: ${error.message}`);
   
       return handlerInput.responseBuilder
-        .speak('Consegue explicar de outra forma? Não consegui entendi direito o que disse.')
+        .speak('Consegue explicar de outra forma? Não consegui entender direito o que disse.')
         .reprompt('Desculpe, não estou conseguindo entender muito bem o que disse, pode repetir com outras palavras?')
         .getResponse();
     },

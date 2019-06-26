@@ -1,0 +1,22 @@
+{
+  "name": "funcao-piscologo-para-a-alexa",
+  "version": "1.0.0",
+  "description": "funcao de psicologa para a alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagodasilvateixeira/funcao-piscologo-para-a-alexa.git"
+  },
+  "author": "Tiago Teixeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagodasilvateixeira/funcao-piscologo-para-a-alexa/issues"
+  },
+  "homepage": "https://github.com/tiagodasilvateixeira/funcao-piscologo-para-a-alexa#readme",
+  "dependencies": {
+    "ask-sdk": "^2.6.0"
+  }
+}
